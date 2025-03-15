@@ -74,11 +74,11 @@ public class PercolationPicture {
 
     // pick a random file from the inputFiles folder
     private static String pickRandomFile() {
-        File[] ar = new File("inputFiles").listFiles();
+        File[] ar = new File("D:\\Vadim\\Java\\sp25\\hw2\\inputFiles").listFiles();
         if (ar == null) {
             throw new RuntimeException("could not find inputFiles");
         }
-        return "inputFiles/" + ar[StdRandom.uniform(ar.length)].getName();
+        return "D:\\Vadim\\Java\\sp25\\hw2\\inputFiles\\" + ar[StdRandom.uniform(ar.length)].getName();
     }
 
     public static void main(String[] args) {
